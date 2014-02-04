@@ -78,9 +78,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="camera.cpp" />
     <ClCompile Include="glut_backend.cpp" />
     <ClCompile Include="lighting_technique.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="math_3d.cpp" />
     <ClCompile Include="mesh.cpp" />
     <ClCompile Include="pipeline.cpp" />
     <ClCompile Include="technique.cpp" />
@@ -99,9 +101,6 @@
     <ClInclude Include="technique.h" />
     <ClInclude Include="texture.h" />
     <ClInclude Include="util.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Object Include="quad2.obj" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -14,8 +14,7 @@
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-    Tutorial 30 - Basic Tessellation
+	 30 - Basic Tessellation
 */
 
 #include <math.h>
@@ -34,11 +33,11 @@
 #define WINDOW_WIDTH  1680
 #define WINDOW_HEIGHT 1050
 
-class Tutorial30 : public ICallbacks
+class Tess : public ICallbacks
 {
 public:
 
-    Tutorial30()
+    Tess()
     {
         m_pGameCamera = NULL;
         m_directionalLight.Color = Vector3f(1.0f, 1.0f, 1.0f);
@@ -57,7 +56,7 @@ public:
         m_isWireframe = false;
     }
 
-    virtual ~Tutorial30()
+    virtual ~Tess()
     {
         SAFE_DELETE(m_pGameCamera);
         SAFE_DELETE(m_pMesh);
@@ -218,7 +217,7 @@ int main(int argc, char** argv)
         return 1;
     }
 
-    Tutorial30* pApp = new Tutorial30();
+    Tess* pApp = new Tess();
 
     if (!pApp->Init()) {
         return 1;
